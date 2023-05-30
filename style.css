@@ -3,11 +3,12 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: futura;
 }
 
 header {
   border: 2px solid;
+  box-shadow: 0px 0px 10px 0px lightgrey;
 }
 
 h1 {
@@ -16,6 +17,7 @@ h1 {
 
 article {
   border: 2px solid;
+  border-radius: 10px;
   margin: 20px 20px 20px 20px;
   text-align: center;
   position: relative;
@@ -24,6 +26,10 @@ article {
 button {
   padding: 10px 15px 10px 15px;
   background-color: transparent;
+}
+
+button:hover {
+  background-color: lightgrey;
 }
 
 ul {
@@ -35,7 +41,7 @@ ul {
 }
 
 li {
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 5px;
   padding: 2px 5px 2px 5px;
   text-decoration: none;
@@ -49,21 +55,32 @@ a {
 }
 
 footer {
+  background-color: white;
   border: 2px solid;
-  position: fixed;
-  bottom: 0;
   display: flex;
   justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   gap: 80px;
-  width: 100%;
+  flex-wrap: wrap;
+  padding: 5px;
+  box-shadow: 0px 0px 5px 0px lightgrey;
 }
 
 footer > span:hover {
   background-color: lightgrey;
 }
+
 body {
   padding: 0;
   margin: 0;
+}
+
+main {
+  border: 0px solid;
+  margin-top: 30px;
 }
 
 .bookmark {
